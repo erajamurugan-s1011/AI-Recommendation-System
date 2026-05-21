@@ -1,0 +1,27 @@
+mkdir AI-Recommendation-System
+cd AI-Recommendation-System
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+(ONCE)pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+python "d:\REC\AI-Recommendation-System\backend\test_gpu.py"
+python backend/test_gpu.py
+ python "d:\REC\AI-Recommendation-System\backend\recommendation.py"
+ python create_embeddings.py
+
+ #BACKEND(Seperate Terminal 1)
+ Set-Location "D:\REC\AI-Recommendation-System\backend"
+PS D:\REC\AI-Recommendation-System\backend> python -m uvicorn app:app --reload
+
+#FRONTEND(Seperate Terminal 2)
+Set-Location frontend                         
+PS D:\REC\AI-Recommendation-System\frontend> npm run dev  
+
+
+Open:
+http://localhost:5173
+Try queries like:
+I like space and science fiction
+I like superheroes
+I like romantic stories
+I like action and fighting
