@@ -1,0 +1,1 @@
+Built an AI-powered movie recommendation system that provides personalized movie suggestions using natural language input, semantic embeddings, and cosine similarity, integrated with a React frontend and FastAPI backend.
